@@ -7,15 +7,10 @@
 	box-sizing: border-box;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	--color-text: #111;
 	--color-body: #eee;
 	--color-sections: white;
@@ -28,7 +23,6 @@
 	--tekst-background: black;
 	--kerstbutton: #ad0101;
 	--kerstbutton2: #065603;
-	/* kleur werkt niet!! */
 }
 
 @media (prefers-color-scheme:dark) {
@@ -44,21 +38,6 @@
 		--tekst-nav: white;
 		--tekst-background: white;
 	}
-}
-
-.kerst:root {
-	--color-text: #ad0101;
-	--color-body: #065603;
-	--color-text: #ff0000;
-	--color-body: #ff0000;
-	--color-sections: rgb(255, 0, 0);
-	--nav-background: #9a0000;
-	--special-heading: rgb(166, 141, 115);
-	--color-nav: black;
-	--foto-tekst: #eee;
-	--linkjes: #ffffff;
-	--tekst-nav: white;
-	--tekst-background: black;
 }
 
 
@@ -121,7 +100,6 @@ section img {
 	margin-top: 4em;
 	background-color: var(--color-body);
 	padding-bottom: 3em;
-	/* margin-bottom: 3em; */
 }
 
 p {
@@ -192,7 +170,7 @@ nav img {
 }
 
 nav:nth-of-type(2) a {
-	color: var(--color-body);
+	color: var(--foto-tekst);
 	padding: 1em 3.5em 1em 3em;
 	border-style: solid;
 	margin-left: 2em;
@@ -201,7 +179,7 @@ nav:nth-of-type(2) a {
 }
 
 nav:nth-of-type(2) p {
-	color: var(--color-body);
+	color: var(--foto-tekst);
 	padding: 1em 3em 1em 3em;
 	border-style: solid;
 	margin-left: 2em;
@@ -220,7 +198,8 @@ nav:nth-of-type(2) div {
 
 
 
-.winkelwagen1, .winkelwagen2 {
+.winkelwagen1,
+.winkelwagen2 {
 	position: absolute;
 	z-index: 4;
 	margin-left: 22.1em;
@@ -233,22 +212,6 @@ nav:nth-of-type(2) div {
 	font-weight: bold;
 	margin-top: 1.3em;
 }
-
-/* .winkelwagen2 {
-	position: absolute;
-	z-index: 4;
-	margin-left: 22.1em;
-	display: none;
-	background-color: red;
-	border-radius: 10px;
-	padding-right: .3em;
-	padding-left: .3em;
-	color: var(--foto-tekst);
-	font-weight: bold;
-	margin-top: 1.3em;
-} */
-
-
 
 
 /* section 1 */
@@ -299,7 +262,6 @@ section:nth-of-type(1) p:nth-of-type(2) {
 	color: var(--foto-tekst);
 	margin-bottom: 1em;
 }
-
 /* class gemaakt voor de kerstkleuren */
 
 .kerst:hover {
@@ -603,24 +565,27 @@ footer section:nth-of-type(1) button:hover {
 	padding-top: 3em;
 	text-align: center;
 	margin-top: 0;
-	animation: h1animatie 5s infinite ;
+	animation: h1animatie 5s infinite;
 }
 
 
 @keyframes h1animatie {
-    0% {
+	0% {
 
-        color: hotpink
-    }
-    50% {
- 
-        color: rgb(155, 85, 247); /* Halverwege van kleur veranderen */
-    }
-    100% {
-   
-        color: hotpink
-    }
+		color: hotpink
+	}
+
+	50% {
+
+		color: rgb(155, 85, 247);
+	}
+
+	100% {
+
+		color: hotpink
+	}
 }
+/* bron: https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php */
 
 
 .pagina2 div section:nth-of-type(1) {
@@ -647,7 +612,12 @@ footer section:nth-of-type(1) button:hover {
 	background-color: transparent;
 }
 
-.pagina2 section article p, h5 {
+.pagina2 section article img:hover {
+animation: p2imgRotate 2s infinite;
+}
+
+.pagina2 section article p,
+h5 {
 	text-align: left;
 	margin-left: .5em;
 }
@@ -665,7 +635,26 @@ footer section:nth-of-type(1) button:hover {
 
 /* section3 3 */
 
-/* .pagina2 div:nth-of-type(3) section:nth-of-type(3) img{
-margin-top: 0;
-padding: 0;
-} */
+.pagina2 div:nth-of-type(3) section img:hover {
+	animation: p2imgRotate 2s infinite;
+	padding-bottom: 0;
+}
+
+
+@keyframes p2imgRotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.pagina2 button:nth-of-type(1) {
+	color: var(--color-text);
+}
