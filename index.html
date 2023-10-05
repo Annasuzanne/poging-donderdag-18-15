@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+
+	<link href="styles/style.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+	<nav>
+		<p class="winkelwagen1">1</p>
+		<p class="winkelwagen2">2</p>
+		<img onclick="OpenMenu()" src="/images/hamburgermenu.png" alt="menu">
+		<!-- <a class="hamburgermenu" onclick="OpenMenu()" href="/gezichtscrèmes.html"> <img src="/images/hamburgermenu.png" alt="menu"></a> -->
+		<h1><a href="/gezichtscrèmes.html"> <img src="/images/logo.webp" alt="Rituals Logo"></a></h1>
+		<!-- <a href="/gezichtscrèmes.html"> <img src="/images/logo.webp" alt="Rituals Logo"></a> -->
+		<a href="/gezichtscrèmes.html"> <img src="/images/loop.png" alt="zoeken"></a>
+		<a href="/gezichtscrèmes.html"> <img src="/images/profiel.png" alt="mijn profiel"></a>
+		<a href="/gezichtscrèmes.html"> <img src="/images/mandje.png" alt="winkelmandje"></a>
+
+	</nav>
+	<nav class="hamburgermenu">
+
+			<img onclick="CloseMenu()" src="/images/kruis.png" alt="Kruisje">
+		
+		<p>Nieuw</p>
+		<p>Body</p>
+		<p>Home</p>
+		<p>Beauty</p>
+		<p>Cadeaus</p>
+		<p>Customise</p>
+		<a href="/gezichtscrèmes.html">Gezichtscrèmes</a>
+	</nav>
+
+	<header>
+
+	</header>
+
+	<main>
+
+		<!-- section 1 -->
+		<section>
+			<p class="absolute">24 MOMENTS OF JOY</p>
+			<!-- class omdat ik anders op pagina 2 ook position absolute had -->
+			<video controls autoplay muted src="/video/filmpje1.mp4"></video>
+			<!-- bron: https://www.w3schools.com/tags/tag_video.asp -->
+			<h2>The Ritual of Advent</h2>
+			<p>Beleef elke dag op een betekenisvolle mannier met The Ritual of Advent - en profiteer van onze beste
+				deals ooit.*</p>
+				<button class="kerst" onclick="ChangeColors()">KIES JE KALENDER</button>
+		</section>
+
+		<!-- section 2 -->
+		<section class="section2">
+			<article>
+				<h3>AT YOUR SERVICE</h3>
+				<h4>Gratis verzending bij bestellingen vanaf €35</h4>
+				<ul>
+					<li>.</li>
+					<li>.</li>
+					<li>.</li>
+				</ul>
+			</article>
+			<article>
+				<h3>AT YOUR SERVICE</h3>
+				<h4>Levertijd 1 tot 2 werkdagen</h4>
+				<ul>
+					<li>.</li>
+					<li>.</li>
+					<li>.</li>
+				</ul>
+			</article>
+			<article>
+				<h3>AT YOUR SERVICE</h3>
+				<h4>Ontvang online advies via <a href="/gezichtscrèmes.html">Whatsapp</a></h4>
+				<ul>
+					<li>.</li>
+					<li>.</li>
+					<li>.</li>
+				</ul>
+			</article>
+		</section>
+
+		<!-- section 3 -->
+		<section>
+			<h3>JOUW CADEAU</h3>
+			<h4>Exclusief voor members</h4>
+			<p>Ontvang een 2-staps thuisspa-routine met interieurparfum en shower foam bij besteding van €45 of meer.
+			</p>
+			<button>SHOP NU</button>
+			<img src="/images/plaatje1.png" alt="The ritual of Hammam producten">
+		</section>
+
+		<!-- section 4 -->
+		<section>
+			<h3>The Ritual of Hammam</h3>
+			<h4>Your Authentic Spa Experience</h4>
+			<p>Ontdek onze vernieuwde thuisspa-collectie met arganolie, eucalyptus en nieuwe innovatieve producten.</p>
+			<a href="">ONTDEK THUISSPA-COLLECTIE</a>
+			<img src="/images/Plaatje2.png" alt="mensen in de sauna">
+		</section>
+
+		<!-- section 5 -->
+		<section>
+			<h3>Reinigt en zuivert</h3>
+			<h4>De Nieuwe Hammam Arrivals</h4>
+
+			<div>
+				<article>
+					<img src="/images/parfum1.webp" alt="parfum flesje">
+					<h5>Home perfume</h5>
+					<p>The Ritual of Hammam, huisparfum, 500 ml</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum2.webp" alt="lotion flesje">
+					<h5>Body Lotion Mousse</h5>
+					<p>The Ritual of Hammam, bodylotion mousse, 150 ml</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum3.webp" alt="bath foam flesje">
+					<h5>Bath Foam</h5>
+					<p>The Ritual of Hammam, badschuim, 500 ml</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum4.webp" alt="shower gel flesje">
+					<h5>Foaming Shower Gell</h5>
+					<p>The Ritual of Hammam, doucheschuim, 200 ml</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum5.webp" alt="salt body scrub">
+					<h5>Salt body scrub</h5>
+					<p>The Ritual of Hammam, bodyscrub met grof zout, 300 gr</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum6.webp" alt="massage oil flesje">
+					<h5>Massage Oil</h5>
+					<p>The Ritual of Hammam, massageolie, 100 ml</p>
+					<p>€14,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum7.webp" alt="zwarte zeep flesje">
+					<h5>Black Soap</h5>
+					<p>The Ritual of Hammam, zwarte zeep, 150 ml</p>
+					<p>€9,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum8.webp" alt="Body cream flesje">
+					<h5>Body Cream</h5>
+					<p>The Ritual of Hammam, bodycrème, 220 ml</p>
+					<p>€19,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/parfum9.webp" alt="Hair en body mist flesje">
+					<h5>Hair & Body Mist</h5>
+					<p> The Ritual of Hammam, mist voor haar & lichaam, 50 ml</p>
+					<p>€19,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+			</div>
+		</section>
+
+		<!-- section 6 -->
+		<section>
+			<h3>PROBEER NU MET KORTING</h3>
+			<h4>The Ritual of Jing Serums</h4>
+			<p>Kies voor de serums van The Ritual of Jing om te ontspannen en je nachtrust te bevorderen. Nu voor €10,50
+				in
+				plaats van €13,90.*</p>
+			<a href="">SHOP JING SERUMS</a>
+			<img src="/images/plaatjesection6.png" alt="Ritual of Jing flesjes">
+		</section>
+
+		<!-- section 7 -->
+		<section>
+			<h3>NIEUW</h3>
+			<h4>The Clean Beauty Bar</h4>
+			<p>Maak kennis met onze reinigingsbars. Verkrijgbaar in zes classic geuren voor body & hair, een face bar en
+				een
+				exfoliërende scrub bar. </p>
+			<a href="">SHOP REINIGINGSBARS</a>
+			<img src="/images/plaatjesection7.png" alt="clean beauty bar">
+		</section>
+
+		<!-- section 8 -->
+		<section>
+			<h3>Het beste voor jou</h3>
+			<h4>Home Essentials</h4>
+
+
+			<div>
+				<article>
+					<img src="/images/scroll1.webp" alt="hand balm flesje">
+					<h5>Hand Balm</h5>
+					<p>The Ritual of Hammam, handbalsem, 175 ml</p>
+					<p>€11,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll2.webp" alt="Geurstokjes navulling flesje">
+					<h5>Refill Fragrance Sticks</h5>
+					<p>The Ritual of Hammam, navulling geurstokjes, 250 ml</p>
+					<p>€27,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll3.webp" alt="bath foam flesje">
+					<h5>Bath Foam</h5>
+					<p>The Ritual of Hammam, badschuim, 500 ml</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll4.webp" alt="Geurstokjes navulling flesje">
+					<h5>Home Perfume</h5>
+					<p> The Ritual of Mehr, huisparfum spray, 500 ml</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll5.webp" alt="Geurstokjes navulling flesje">
+					<h5>Refill Fragrance Sticks</h5>
+					<p>The Ritual of Jing, navulling geurstokjes, 250 ml</p>
+					<p>€27,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll6.webp" alt="Huisparfum flesje">
+					<h5>Home Perfume</h5>
+					<p>The Ritual of Sakura, huisparfum spray, 500 ml</p>
+					<p>€29,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll7.webp" alt="refill handwash flesje">
+					<h5>Refill Handwash</h5>
+					<p>The Ritual of Hammam, refill handzeep, 600 ml</p>
+					<p>€18,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll8.webp" alt="hand wash flesje">
+					<h5>Hand Wash</h5>
+					<p>Amsterdam Collection, luxe handzeep, 300 ml</p>
+					<p>€12,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll9.webp" alt="geurstokjes">
+					<h5>Mini Fragrance Sticks</h5>
+					<p> The Ritual of Hammam, mini geurstokjes, 70 ml</p>
+					<p>€16,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+
+				<article>
+					<img src="/images/scroll10.webp" alt="Hair en body mist flesje">
+					<h5>Scented Candle</h5>
+					<p> ammam, geurkaars, 290 gr</p>
+					<p>€24,90</p>
+					<button onclick="toggleWinkelwagen()">SHOP</button>
+				</article>
+			</div>
+		</section>
+
+		<!-- section 9 -->
+		<section>
+			<h3>ULTRA VERZORGENDE FORMULE</h3>
+			<h4>Body Lotion Mouse</h4>
+			<p>Verwen je huid na het douchen met een unieke, snel absorberende mousse. Nu verkrijgbaar in vier geuren.
+			</p>
+			<a href="">SHOP BODY LOTION MOUSSE</a>
+			<img src="/images/plaatjesection9.png" alt="">
+		</section>
+
+		<!-- section 10 -->
+		<section>
+			<h3>AB-SO-LUTE WINNAAR</h3>
+			<h4>De Must-have dagcrème</h4>
+			<p>LINDA.lab heeft onze nieuwe dagcrème getest en de resultaten zijn fantastisch! 84% van de testers is mega
+				fan.</p>
+			<a href="">SHOP DAGCRÈME</a>
+			<img src="/images/plaatjesection10.png" alt="Getest door de lezers van Linda">
+		</section>
+
+		<!-- section 11 -->
+		<section>
+			<h3>Join the refill movement</h3>
+			<h4>But 1 Refill = Grow 1 Tree</h4>
+			<p>Koop een refill en wij planten een boom. Kies voor eco-chic refills in plaats van een nieuw product om
+				onze
+				hulpbronnen te behouden.</p>
+			<a href="">ONTDEK MEER</a>
+			<img src="/images/plaatjesection11.png" alt="vijfer met bomen">
+		</section>
+
+		<!-- section 12 -->
+		<section>
+			<h3>Uit het magazine</h3>
+			<h4>De Voordelen van Eucalyptus</h4>
+			<p>We nemen je mee in de wondere wereld van het ingrediënt eucaluptus en vertellen je alles over haar
+				krachtige
+				werking.</p>
+			<a href="">ONTDEK MEER</a>
+
+			<img src="/images/plaatjesection12.png" alt="vrouw smeert bodylotion">
+			<img src="/images/plaatje2section12.png" alt="vrouw op smartphone">
+		</section>
+
+		<!-- section 13 -->
+		<section>
+			<h3>ELKE AANKOOP TELT MEE</h3>
+			<h4>Schrijf je in voor ons loyaliteitsprogramma (My Rituals)</h4>
+			<p>Inschrijven is gratis en als member krijg je toegang tot de vele voordelen; van luxe cadeaus tot
+				bijzondere
+				experiences. Schrijf je in en ontvang direct een cadeau bij je tweede aankoop.</p>
+			<a href="">MELD JE AAN</a>
+		</section>
+
+		<p>* Door deel te nemen aan onze promoties ga je automatisch akkoord met onze voorwaarden.</p>
+	</main>
+
+	<footer>
+		<!-- footer section1 -->
+		<section>
+			<h4>Bijf op de hoogte</h4>
+			<label for="E-mailadres">Email </label>
+			<input type="text">
+			<!-- bron: https://www.w3schools.com/tags/tag_label.asp -->
+
+			<button>Aanmelden</button>
+		</section>
+
+		<!-- footer section2 -->
+		<section>
+			<h4>Bel onze helpdesk</h4>
+			<div>
+				<p>+31 (0)202415948 Lokaal tarief</p>
+				<p>Maandag - Vrijdag 09:00 - 21:00</p>
+				<p>Zaterdag - Zondag 10:00 - 18:30</p>
+			</div>
+		</section>
+
+		<!-- footer section3 -->
+		<section>
+			<h3>Kies je land en taal</h4>
+				<h4>Land</h4>
+				<p>Nederland</p>
+				<h4>Taal</h4>
+				<p>Nederlands</p>
+				<!-- <button>Doorgaan</button> -->
+		</section>
+	</footer>
+
+
+	<script src="scripts/script.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- loop icon CORPORATE GOVERNANCE | Qorvo, Inc. (z.d.). Qorvo, Inc. https://ir.qorvo.com/corporate-governance 
+Kruisje icon Wikipedia contributors. (z.d.). File:Cross Icon (white).svg - Wikipedia. https://en.m.wikipedia.org/wiki/File:Cross_icon_%28white%29.svg
+hamburgermenu File:Hamburger Icon White.svg - Wikimedia Commons. (2019, 20 augustus). https://commons.wikimedia.org/wiki/File:Hamburger_icon_white.svg
+rituals logo Home. (2022, 16 augustus). Rituals. https://careers.rituals.com/be/nl/home
+mandje Star Network. (z.d.). White Cart 73 icon - Free White Cart icons. https://www.iconsdb.com/white-icons/cart-73-icon.html 
+Profiel Star Network. (z.d.-b). White User Icon - Free White User icons. https://www.iconsdb.com/white-icons/user-icon.html
+
+
+-->
