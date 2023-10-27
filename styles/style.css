@@ -41,6 +41,7 @@
 }
 
 
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -53,7 +54,7 @@ html {
 body {
 	margin: 0;
 	background-color: var(--color-body);
-	font-family: classgarmnd bt, times new roman, serif;
+	font-family: "Classgarmnd BT", "Times New Roman", serif;
 }
 
 h2 {
@@ -107,6 +108,7 @@ p {
 }
 
 button {
+	font-family: "Classgarmnd BT", "Times New Roman", serif;
 	font-weight: lighter;
 	font-size: 13px;
 	padding: 10px;
@@ -657,4 +659,10 @@ h5 {
 
 .pagina2 button:nth-of-type(1) {
 	color: var(--color-text);
+}
+
+
+
+.anders {
+	display: block;
 }

@@ -1,35 +1,71 @@
-var Hamburgermenu = document.getElementsByClassName("hamburgermenu");
+// var Hamburgermenu = document.getElementsByClassName("hamburgermenu");
 
-function OpenMenu() {
-    Hamburgermenu[0].style.display = "block";
-}
+// function OpenMenu() {
+//     Hamburgermenu[0].style.display = "block";
+// }
 
-function CloseMenu() {
-    Hamburgermenu[0].style.display = "none";
-}
+// function CloseMenu() {
+//     Hamburgermenu[0].style.display = "none";
+// }
 // Bronnen: Marina, chatGPT, code van internetstandaarden 
 
 
-var winkelwagen1 = document.getElementsByClassName("winkelwagen1");
-var winkelwagen2 = document.getElementsByClassName("winkelwagen2");
+
+// Deze code heb ik vervangen voor de herkansing: ik heb de onclicks uit de HTML weggehaald.
+var hamburgerImg = document.querySelector(".hamburgerImg");
+
+var hamburgermenu = document.querySelector(".hamburgermenu");
+
+var kruisjeImg = document.querySelector(".kruisjeImg");
+
+hamburgerImg.onclick = openMenu;
+
+function openMenu() {
+  hamburgermenu.classList.add("anders");
+}
+
+kruisjeImg.onclick = closeMenu;
+
+function closeMenu() {
+  hamburgermenu.classList.remove("anders");
+}
+
+
+
+
+
+// Bij deze code heb ik de queryselector gebruikt in plaats van de getElementsByClassName en ik heb de onclicks uit de HTML weggehaald.
+var winkelwagen1 = document.querySelector(".winkelwagen1");
+var winkelwagen2 = document.querySelector(".winkelwagen2");
+var shopButtons = document.querySelectorAll("section article button");
+
+shopButtons.forEach(function(shop) {
+    shop.addEventListener('click', toggleWinkelwagen);
+});
+
 var isWinkelwagen1Zichtbaar = true;
 
 function toggleWinkelwagen() {
     if (isWinkelwagen1Zichtbaar) {
-        winkelwagen1[0].style.display = "block";
-        winkelwagen2[0].style.display = "none";
+        winkelwagen1.style.display = "block";
+        winkelwagen2.style.display = "none";
         isWinkelwagen1Zichtbaar = false;
     } else {
-        winkelwagen1[0].style.display = "none";
-        winkelwagen2[0].style.display = "block";
-        isWinkelwagen1Zichtbaar = false;
+        winkelwagen1.style.display = "none";
+        winkelwagen2.style.display = "block";
+        isWinkelwagen1Zichtbaar = true;
     }
-} 
+}
 // bron: Kenza en chatGPT
 
 
 
-var kerstKnoppen = document.getElementsByClassName("kerst");
+
+
+
+
+
+var kerstKnoppen = document.querySelectorAll(".kerst");
 var kleurenGewijzigd = false; 
 
 var afbeeldingen = document.querySelectorAll("section:nth-of-type(3) img, section:nth-of-type(4) img");
@@ -136,8 +172,8 @@ for (var i = 0; i < kerstKnoppen.length; i++) {
 
 
 
-
-var audio2 = document.getElementsByClassName("audio2")[0];
+var audio2 = document.querySelector(".audio2");
+// var audio2 = document.getElementsByClassName("audio2")[0];
 var isPlaying = false;
 
 document.addEventListener("keydown", function(event) {

@@ -52,7 +52,12 @@ Homepage - https://www.rituals.com/nl-nl/home
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-De site geeft veel foutmeldingen. De headers staan niet op volgorde. De h1 is niet de titel van de pagina. Het filmpje kan niet op pauze. Niet alles had een alt tekst. De button elementen waren niet goed gebruikt. Dark mode is niet supported. 
+- De site geeft veel foutmeldingen. 
+- De headers staan niet op volgorde. De h1 is niet de titel van de pagina. 
+- Het filmpje kan niet op pauze. 
+- Niet alles had een alt tekst. 
+- De button elementen waren niet goed gebruikt. 
+- Dark mode is niet supported. 
 </details>
 
 ## Breakdownschets (week 1)
@@ -154,7 +159,12 @@ De headinglevels die ik heb gebruikt moet ik even fixen zodat ik een goede volgo
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  Ik heb de headers op volgorde gezet. Ik heb ervoor gezorgd dat de h1 de titel van de pagina is. Ik heb een filmpje dat op pauze kan. Ik heb overal een alt tekst bijgezet. Ik heb buttons gebruikt voor elementen die niet doorverwijzen naar een andere pagina, daar heb ik a's voor gebruikt. Ik heb ook een dark mode toegevoegd. het is me nog niet gelukt dat de screenreader het hamburgermenu opent. 
+  - Ik heb de headers op volgorde gezet. Ik heb ervoor gezorgd dat de h1 de titel van de pagina is. 
+  - Ik heb een filmpje dat op pauze kan. 
+  - Ik heb overal een alt tekst bijgezet. 
+  - Ik heb buttons gebruikt voor elementen die niet doorverwijzen naar een andere pagina, daar heb ik a's voor gebruikt. 
+  - Ik heb ook een dark mode toegevoegd. 
+  - het is me nog niet gelukt dat de screenreader het hamburgermenu opent. 
 
 </details>
 
@@ -203,21 +213,21 @@ Ik moet even een nieuwe repository aanmaken en hopelijk werkt Github dan weer du
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-Ik heb geleerd om de kleuren op te slaan als variabelen in de root en deze aan te passen voor bijvoorbeeld een darkmodus. 
+kleuren opslaan als variabelen in de root en deze aan te passen voor bijvoorbeeld een darkmodus. 
   <img src="readme-images/darkmodus.png" width="375px" alt="top">
 
   ik heb geleerd om overflow te gebruiken om horizontaal te scrollen
   <img src="readme-images/eindresultaat3.png" width="375px" alt="top">
 
-Ik heb geleerd om met java script micro acties te maken. Hier heb ik een p boven het winkelmandje geplaatst die aangeeft hoeveel producten je in je winkelmandje hebt. Het lukte helaas niet om verder te tellen met javascript. 
+micro acties maken met JavaScript. Hier heb ik een p boven het winkelmandje geplaatst die aangeeft hoeveel producten je in je winkelmandje hebt. Het lukte helaas niet om verder te tellen met javascript. 
   <img src="readme-images/eindresultaat7.png" width="375px" alt="top">
 
-ik heb geleerd hoe ik een hamburgermenu kan maken en hoe ik kan werken met position relative, fixed en absolute.
+Hamburgermenu maken en hoe ik kan werken met position relative, fixed en absolute werk.
   <img src="readme-images/eindresultaat8.png" width="375px" alt="top">
 
-  Ik heb geleerd om animaties te maken met css. En hoe ik een audiobestand kan afspelen op het moment dat er een button of toets is ingedrukt op het toetsenbord. 
+Animaties maken met css. En een audiobestand afspelen op het moment dat er een button of toets is ingedrukt op het toetsenbord. 
 
-Ik heb geleerd om afbeeldingen te vervangen met javascript en de kleuren te veranderen met de root. 
+Afbeeldingen vervangen met javascript en de kleuren te veranderen met de root. 
     <img src="readme-images/eindresultaat9.png" width="375px" alt="top">
 
 
@@ -265,5 +275,7 @@ het is niet gelukt om deze te laten werken. Ik had dit graag werkend willen make
   15. bron: https://www.w3schools.com/css/css3_variables_javascript.asp#:~:text=CSS%20variables%20have%20access%20to,can%20change%20them%20with%20JavaScript
   16. chatgpt
   17. Kenza
+  18. audio: https://pixabay.com/
+  19. rituals images en video: https://www.rituals.com/nl-nl/home
 
 </details>
