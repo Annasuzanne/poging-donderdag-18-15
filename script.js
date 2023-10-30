@@ -33,7 +33,6 @@ function closeMenu() {
 
 
 
-
 // Bij deze code heb ik de queryselector gebruikt in plaats van de getElementsByClassName en ik heb de onclicks uit de HTML weggehaald.
 var winkelwagen1 = document.querySelector(".winkelwagen1");
 var winkelwagen2 = document.querySelector(".winkelwagen2");
@@ -71,34 +70,35 @@ var kleurenGewijzigd = false;
 var afbeeldingen = document.querySelectorAll("section:nth-of-type(3) img, section:nth-of-type(4) img");
 
 var oudeimg = document.querySelector("section:nth-of-type(3) img");
-var santaimg = "/images/santaclaus.png";
+var santaimg = ("./imgages/santaclaus.png");
+
 // bron: https://voorkeuren.tvgids.nl/consent?target=https%3A%2F%2Fwww.guidinc.nl%2Fnieuws%2Fseries%2Fthe-santa-clauses-disney-plus-kerstmis-kerstserie&aid=bdc&sid=guidinc.web&referrer=https%3A%2F%2Flens.google.com%2F
 
-var imgterug = "/bannerimages/plaatje1.png";
+var imgterug = "bannerimages/plaatje1.png";
 
 var oudeimg2 = document.querySelector("section:nth-of-type(4) img");
-var imgterug2 = "/bannerimages/plaatje2.png";
+var imgterug2 = "bannerimages/plaatje2.png";
 
 var oudeimg3 = document.querySelector("section:nth-of-type(6) img");
-var imgterug3 = "/bannerimages/plaatjesection6.png";
+var imgterug3 = "bannerimages/plaatjesection6.png";
 
 var oudeimg4 = document.querySelector("section:nth-of-type(7) img");
-var imgterug4 = "/bannerimages/plaatjesection7.png";
+var imgterug4 = "bannerimages/plaatjesection7.png";
 
 var oudeimg5 = document.querySelector("section:nth-of-type(9) img");
-var imgterug5 = "/bannerimages/plaatjesection9.png";
+var imgterug5 = "bannerimages/plaatjesection9.png";
 
 var oudeimg6 = document.querySelector("section:nth-of-type(10) img");
-var imgterug6 = "/bannerimages/plaatjesection10.png";
+var imgterug6 = "bannerimages/plaatjesection10.png";
 
 var oudeimg7 = document.querySelector("section:nth-of-type(11) img");
-var imgterug7 = "/bannerimages/plaatjesection11.png";
+var imgterug7 = "bannerimages/plaatjesection11.png";
 
 var oudeimg8 = document.querySelector("section:nth-of-type(12) img:nth-of-type(1)");
-var imgterug8 = "/bannerimages/plaatjesection12.png";
+var imgterug8 = "bannerimages/plaatjesection12.png";
 
 var oudeimg9 = document.querySelector("section:nth-of-type(12) img:nth-of-type(2)");
-var imgterug9 = "/bannerimages/plaatje2section12.png";
+var imgterug9 = "bannerimages/plaatje2section12.png";
 
 
 var audio = document.querySelector("audio");
