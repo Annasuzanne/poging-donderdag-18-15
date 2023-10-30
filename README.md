@@ -237,6 +237,13 @@ Afbeeldingen vervangen met javascript en de kleuren te veranderen met de root.
 het is niet gelukt om deze te laten werken. Ik had dit graag werkend willen maken zodat je een land en taal kan kiezen. 
     <img src="readme-images/eindresultaat11.png" width="375px" alt="bummer">
 
+
+ ### Herkansing:
+ Ik heb mijn JavaScript aangepast. Ik heb onclicks uit mijn HTML gehaald en deze verwerkt in mijn JavaScript. Ik heb de queryselector gebruikt in plaats van de getElementsByClassName. 
+ Ik heb mijn HTML moeten aanpassen omdat mijn website het niet deed op Github. Daarvoor moest ik de / voor de links van mijn paginas en images weghalen.
+
+
+
 </details>
 
 
