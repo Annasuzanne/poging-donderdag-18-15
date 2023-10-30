@@ -70,7 +70,7 @@ var kleurenGewijzigd = false;
 var afbeeldingen = document.querySelectorAll("section:nth-of-type(3) img, section:nth-of-type(4) img");
 
 var oudeimg = document.querySelector("section:nth-of-type(3) img");
-var santaimg = ("./imgages/santaclaus.png");
+var santaimg = ("imgages/santaclaus.png");
 
 // bron: https://voorkeuren.tvgids.nl/consent?target=https%3A%2F%2Fwww.guidinc.nl%2Fnieuws%2Fseries%2Fthe-santa-clauses-disney-plus-kerstmis-kerstserie&aid=bdc&sid=guidinc.web&referrer=https%3A%2F%2Flens.google.com%2F
 
